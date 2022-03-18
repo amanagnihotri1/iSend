@@ -3,15 +3,9 @@ const server=require("socket.io");
 const app=express();
 const path=require("path");
 const http=require("http").createServer(app);
-const cors=require("cors");
 const{userJoin,getCurrentUser,userLeave}=require("./utils/user");
-const io=require("socket.io")(http,{
-    cors:{   
-        origin: ["http://localhost:5000"]
-    }
-});
+const io=require("socket.io")(http);
 app.use(express.static(path.join(__dirname,'public')));
-app.use(cors());
 //runs when user connect 
 const formatMessage=require("./utils/message");
 const botName="iSend Bot";
