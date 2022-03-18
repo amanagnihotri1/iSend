@@ -46,7 +46,7 @@ app.get("/login",(req,res)=>
 {
     res.sendFile(__dirname+"/public/login.html");
 })
-http.listen(process.env.PORT || 5000,(err)=>
+http.listen(process.env.PORT ,(err)=>
 {
     console.log("Server is Up");
 if(err)
