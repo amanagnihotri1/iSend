@@ -1,6 +1,6 @@
 const chatForm=document.getElementById("uf");
 const f=document.getElementById("formf");
-const socket= io("http://localhost:5000");
+const socket= io("ws://.aman4gnihotri.herokuapp.com/socket.io/?EIO=4&transport=websocket");
 const btn=document.getElementById("leavebtn");
 const{ username,roominput }= Qs.parse(window.location.search,{
     ignoreQueryPrefix:true   
