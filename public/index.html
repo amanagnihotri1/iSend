@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles.css" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8fa099a58a.js" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+     <title>Chat</title>
+</head>
+<body>
+    <section class="msger">
+        <header class="msger-header">
+          <div class="msger-header-title">
+            <i class="fa-solid fa-comment-sms"></i> iSend
+          </div>
+          <div class="msger-header-options">
+            <span id="leavebtn"><i class="fa-solid fa-right-from-bracket"></i></span>
+          </div>
+        </header>
+        <div id="msger-chat">
+        </div>
+        <form class="msger-inputarea" id="formf">
+          <input type="text" class="msger-input" placeholder="Enter your message..." id="mess">
+          <button type="submit" class="msger-send-btn">Send</button>
+        </form>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.3/qs.min.js" integrity="sha512-juaCj8zi594KHQqb92foyp87mCSriYjw3BcTHaXsAn4pEB1YWh+z+XQScMxIxzsjfM4BeVFV3Ij113lIjWiC2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="client.js" ></script>
+</body>
+</html>
